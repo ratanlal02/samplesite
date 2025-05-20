@@ -1,0 +1,26 @@
+name: "CI/CD: Docker Build + Render Deploy"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Build Docker Image (local test)
+        run: |
+          set -e
+          docker build -t samplesite .
+
+      # Optional: Add test or lint steps here
+      # - name: Run Tests
+      #   run: npm test
+
+      - name: Trigger Render Deploy
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
