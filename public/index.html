@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Order Food Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FoodHub</div>
+            <div class="nav-links">
+                <a href="#restaurants">Restaurants</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#login">Login</a>
+                <a href="#signup" style="color: #ff6000;">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="search-container">
+            <h1>Order Your Favorite Food</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter your delivery address">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="restaurants">
+        <h2 class="section-title">Featured Restaurants</h2>
+        <div class="restaurant-grid">
+            <div class="restaurant-card">
+                <div class="restaurant-img" style="background-image: url('https://source.unsplash.com/400x300/?pizza')"></div>
+                <div class="restaurant-info">
+                    <h3>Pizza Paradise</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.5 (500+)
+                    </div>
+                    <div class="cuisine">Italian • American</div>
+                    <div class="delivery-time">🕒 25-35 min</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>1. Enter Your Address</h3>
+                <p>Type your delivery address to see available restaurants</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-utensils"></i>
+                <h3>2. Choose Your Meal</h3>
+                <p>Browse menus and select your favorite items</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>3. Enjoy Your Food</h3>
+                <p>Track your order and enjoy your meal!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="login"></section>
+<section id="signup"></section>
+
+
+    <script src="main/main.js"></script>
+</body>
+</html>
